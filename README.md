@@ -39,8 +39,7 @@ A análise se concentra em diagnosticar o crescimento/retração das vendas, ide
   - Categoria que puxou para cima: **Bebidas** (+59,79%)
   - Categoria que puxou para baixo: **Cesta Básica** (-6,72%)
 
-![Gráfico de Categorias - Supermercado A](categorias_supermercado_a.png)
-![Gráfico de Categorias - Supermercado B](categorias_supermercado_b.png)
+![Gráfico de Categorias - Supermercados AB](categorias_supermercado_ab.png)
 
 ---
 
@@ -56,8 +55,7 @@ A análise se concentra em diagnosticar o crescimento/retração das vendas, ide
   - **Futuro Abandonador**: R$ 4.016.851,40
   - **Premium**: R$ 1.859.085,44
 
-![Gráfico de Perfis - Supermercado A](perfis_supermercado_a.png)
-![Gráfico de Perfis - Supermercado B](perfis_supermercado_b.png)
+![Gráfico de Perfis - Supermercado AB](perfis_supermercado_ab.png)
 
 ---
 
@@ -73,8 +71,7 @@ A análise se concentra em diagnosticar o crescimento/retração das vendas, ide
   - Fluxo de consumidores: **Estável**
   - Ticket médio: **Aumentou** (R$ 88,13 para R$ 121,00)
 
-![Gráfico de Fluxo e Ticket - Supermercado A](fluxo_ticket_a.png)
-![Gráfico de Fluxo e Ticket - Supermercado B](fluxo_ticket_b.png)
+![Gráfico de Fluxo e Ticket - Supermercado AB](fluxo_ticket_ab.png)
 
 ---
 
@@ -113,9 +110,3 @@ A análise se concentra em diagnosticar o crescimento/retração das vendas, ide
 ## 7. Conclusão
 
 Esta análise oferece um panorama claro sobre os principais fatores que impulsionam ou retraem as vendas das duas redes varejistas. Ao adotar estratégias de marketing direcionadas, otimizações operacionais e negociações comerciais eficazes, ambas as redes podem melhorar seu desempenho geral e capturar mais valor de seus clientes.
-
----
-
-### Notas:
-- Imagens e gráficos referenciados no README devem ser exportados e incluídos no repositório.
-- Certifique-se de que os arquivos de dados e scripts utilizados também estão devidamente versionados no repositório.
