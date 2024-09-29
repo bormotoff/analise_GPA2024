@@ -49,6 +49,11 @@ app.layout = html.Div(style={'backgroundColor': '#FFFFFF'}, children=[
                 dcc.Graph(
                     figure=px.bar(faturamento_por_mes, x='MES', y='FATURAMENTO_BRUTO',
                                   title="Faturamento por Mês", color_discrete_sequence=['#6CAF60'])
+                    .update_layout(
+                        annotations=[dict(text="Este gráfico mostra o crescimento do faturamento entre os meses de janeiro e fevereiro.", 
+                                          xref='paper', yref='paper', showarrow=False, x=0.5, y=1.15,
+                                          font=dict(size=12, color="black"))]
+                    )
                 ),
             ]),
             html.Div([
@@ -57,6 +62,11 @@ app.layout = html.Div(style={'backgroundColor': '#FFFFFF'}, children=[
                     figure=px.bar(faturamento_por_rede_mes, x='MES', y='FATURAMENTO_BRUTO', color='NOME_SUPERMERCADO',
                                   barmode='group', title="Faturamento por Rede e Mês", color_discrete_map={
                                       'SUPERMERCADO A': '#6CAF60', 'SUPERMERCADO B': '#FFD700'})
+                    .update_layout(
+                        annotations=[dict(text="Compara o faturamento entre os Supermercados A e B nos meses de janeiro e fevereiro.", 
+                                          xref='paper', yref='paper', showarrow=False, x=0.5, y=1.15,
+                                          font=dict(size=12, color="black"))]
+                    )
                 ),
             ]),
         ]),
@@ -67,6 +77,11 @@ app.layout = html.Div(style={'backgroundColor': '#FFFFFF'}, children=[
                 dcc.Graph(
                     figure=px.bar(faturamento_por_perfil_a, x='PERFIL_SUPERMERCADO_A', y='FATURAMENTO_BRUTO', 
                                   title="Supermercado A - Faturamento por Perfil de Cliente", color_discrete_sequence=['#6CAF60'])
+                    .update_layout(
+                        annotations=[dict(text="Este gráfico destaca os perfis de clientes que mais contribuem para o faturamento do Supermercado A.", 
+                                          xref='paper', yref='paper', showarrow=False, x=0.5, y=1.15,
+                                          font=dict(size=12, color="black"))]
+                    )
                 ),
             ]),
             html.Div([
@@ -74,6 +89,11 @@ app.layout = html.Div(style={'backgroundColor': '#FFFFFF'}, children=[
                 dcc.Graph(
                     figure=px.bar(faturamento_por_perfil_b, x='PERFIL_SUPERMERCADO_B', y='FATURAMENTO_BRUTO', 
                                   title="Supermercado B - Faturamento por Perfil de Cliente", color_discrete_sequence=['#FFD700'])
+                    .update_layout(
+                        annotations=[dict(text="Este gráfico destaca os perfis de clientes que mais contribuem para o faturamento do Supermercado B.", 
+                                          xref='paper', yref='paper', showarrow=False, x=0.5, y=1.15,
+                                          font=dict(size=12, color="black"))]
+                    )
                 ),
             ]),
         ]),
@@ -84,6 +104,11 @@ app.layout = html.Div(style={'backgroundColor': '#FFFFFF'}, children=[
                 dcc.Graph(
                     figure=px.bar(faturamento_categoria_variacao_a, x='NOME_CATEGORIA', y='VARIACAO_PERC',
                                   title="Supermercado A - Variação Percentual por Categoria", color_discrete_sequence=['#6CAF60'])
+                    .update_layout(
+                        annotations=[dict(text="Este gráfico mostra a variação percentual do faturamento de cada categoria no Supermercado A.", 
+                                          xref='paper', yref='paper', showarrow=False, x=0.5, y=1.15,
+                                          font=dict(size=12, color="black"))]
+                    )
                 ),
             ]),
             html.Div([
@@ -91,6 +116,11 @@ app.layout = html.Div(style={'backgroundColor': '#FFFFFF'}, children=[
                 dcc.Graph(
                     figure=px.bar(faturamento_categoria_variacao_b, x='NOME_CATEGORIA', y='VARIACAO_PERC',
                                   title="Supermercado B - Variação Percentual por Categoria", color_discrete_sequence=['#FFD700'])
+                    .update_layout(
+                        annotations=[dict(text="Este gráfico mostra a variação percentual do faturamento de cada categoria no Supermercado B.", 
+                                          xref='paper', yref='paper', showarrow=False, x=0.5, y=1.15,
+                                          font=dict(size=12, color="black"))]
+                    )
                 ),
             ]),
         ]),
@@ -102,6 +132,11 @@ app.layout = html.Div(style={'backgroundColor': '#FFFFFF'}, children=[
                     figure=px.bar(x=['Janeiro', 'Fevereiro'], y=[45141, 42095], 
                                   labels={'x': 'Mês', 'y': 'Número de Cupons Fiscais'}, 
                                   title="Fluxo de Consumidores - Supermercado A", color_discrete_sequence=['#6CAF60'])
+                    .update_layout(
+                        annotations=[dict(text="Este gráfico compara o fluxo de consumidores no Supermercado A entre janeiro e fevereiro.", 
+                                          xref='paper', yref='paper', showarrow=False, x=0.5, y=1.15,
+                                          font=dict(size=12, color="black"))]
+                    )
                 ),
             ]),
             html.Div([
@@ -110,6 +145,11 @@ app.layout = html.Div(style={'backgroundColor': '#FFFFFF'}, children=[
                     figure=px.bar(x=['Janeiro', 'Fevereiro'], y=[56.35, 59.79], 
                                   labels={'x': 'Mês', 'y': 'Ticket Médio (R$)'}, 
                                   title="Ticket Médio - Supermercado A", color_discrete_sequence=['#6CAF60'])
+                    .update_layout(
+                        annotations=[dict(text="Este gráfico compara o ticket médio no Supermercado A entre janeiro e fevereiro.", 
+                                          xref='paper', yref='paper', showarrow=False, x=0.5, y=1.15,
+                                          font=dict(size=12, color="black"))]
+                    )
                 ),
             ]),
             html.Div([
@@ -118,6 +158,11 @@ app.layout = html.Div(style={'backgroundColor': '#FFFFFF'}, children=[
                     figure=px.bar(x=['Janeiro', 'Fevereiro'], y=[21287, 21021], 
                                   labels={'x': 'Mês', 'y': 'Número de Cupons Fiscais'}, 
                                   title="Fluxo de Consumidores - Supermercado B", color_discrete_sequence=['#FFD700'])
+                    .update_layout(
+                        annotations=[dict(text="Este gráfico compara o fluxo de consumidores no Supermercado B entre janeiro e fevereiro.", 
+                                          xref='paper', yref='paper', showarrow=False, x=0.5, y=1.15,
+                                          font=dict(size=12, color="black"))]
+                    )
                 ),
             ]),
             html.Div([
@@ -126,6 +171,11 @@ app.layout = html.Div(style={'backgroundColor': '#FFFFFF'}, children=[
                     figure=px.bar(x=['Janeiro', 'Fevereiro'], y=[88.13, 121.00], 
                                   labels={'x': 'Mês', 'y': 'Ticket Médio (R$)'}, 
                                   title="Ticket Médio - Supermercado B", color_discrete_sequence=['#FFD700'])
+                    .update_layout(
+                        annotations=[dict(text="Este gráfico compara o ticket médio no Supermercado B entre janeiro e fevereiro.", 
+                                          xref='paper', yref='paper', showarrow=False, x=0.5, y=1.15,
+                                          font=dict(size=12, color="black"))]
+                    )
                 ),
             ]),
         ]),
