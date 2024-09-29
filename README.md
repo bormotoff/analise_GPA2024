@@ -3,6 +3,10 @@
 Este projeto tem como objetivo analisar os dados de vendas de dois Supermecados do Grupo, **Supermercado A** e **Supermercado B**, durante os meses de janeiro e fevereiro. 
 A análise se concentra em diagnosticar o crescimento/retração das vendas, identificar as principais categorias de produtos e perfis de clientes, e fornecer recomendações práticas para os times de marketing, operações e comercial.
 
+- **Analise completa em PYTHON**: https://github.com/bormotoff/analise_GPA2024/blob/main/Analise_case.ipynb
+- **Dashboard em Python**: https://github.com/bormotoff/analise_GPA2024/blob/main/Analise_case.py
+
+
 ## Índice
 1. [Diagnóstico de Crescimento/Retração de Vendas](#1-diagnóstico-de-crescimento-retração-de-vendas)
 2. [Análise de Categorias de Produtos](#2-análise-de-categorias-de-produtos)
